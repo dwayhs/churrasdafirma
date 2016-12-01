@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: churrasdafirma_development
+
+test:
+  <<: *default
+  database: churrasdafirma_test
+
+production:
+  <<: *default
+  database: churrasdafirma_production
+  username: churrasdafirma
+  password: <%= ENV['CHURRASDAFIRMA_DATABASE_PASSWORD'] %>
