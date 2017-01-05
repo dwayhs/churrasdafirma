@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
+gem 'rails-i18n', '~> 4.0.0'
 gem 'slim-rails'
 gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
@@ -16,16 +17,14 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :test do
+group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'capybara'
   gem 'rspec'
   gem 'poltergeist'
   gem 'selenium-webdriver'
-end
 
-group :development do
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
