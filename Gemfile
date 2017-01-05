@@ -15,21 +15,20 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
-end
-
-group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'capybara'
   gem 'rspec'
   gem 'poltergeist'
   gem 'selenium-webdriver'
+end
 
+group :development do
   gem 'web-console', '~> 2.0'
-
   gem 'spring'
-
   gem 'annotate'
 end
+
+
 
 ruby '2.3.3'
