@@ -16,6 +16,15 @@ group :development, :test do
   gem 'byebug'
 end
 
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'rspec'
+  gem 'poltergeist'
+  gem 'selenium-webdriver'
+end
+
 group :development do
   gem 'web-console', '~> 2.0'
 
